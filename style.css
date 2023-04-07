@@ -1,0 +1,83 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #000;
+    padding: 1.5rem 1.5rem;
+}
+
+
+header h1, header p {
+    color: #fff;
+    margin: 0;
+}
+
+#container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section div {
+   border: 1px solid black;
+   border-radius: 5px;
+   margin: 1rem auto;
+   padding: 1rem;
+}
+
+div label {
+    display: block;
+    border: 1px dashed black;
+    border-radius: 5px;
+    margin: 1rem auto;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+div label:hover {
+    background-color: rgb(243, 243, 31);
+}
+
+div button {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+
+    color: #fff;
+    font-size: larger;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: rgb(96, 33, 221);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+div button:active {
+    background-color: rgb(96, 33, 221, 0.8);
+    border: 3px solid gainsboro;
+}
+
+div h3 {
+    text-align: center;
+}
+
+#resultado {
+    font-size: 24px;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+#f2 {
+    float: right;
+}

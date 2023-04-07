@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de preguntas</h1>
+        <p>Tema: Programación</p>
+    </header>
+    <section id="container">
+        <div id="p1">
+            <h3>¿Qué significa las siglas HTML?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1, this)"> HostTipe Mind Language
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> HyperText Markup Language
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> HardTree Mind Language
+            </label>
+        </div>
+        <div id="p2">
+            <h3>¿Para qué sirven la etiquetas br y hr?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> br: texto en negrita; hr: crear una linea vertical
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> br texto en cursiva; hr: crear una linea horizontal
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> br: salto de línea; hr: crear una linea horizontal
+            </label>
+        </div>
+        <div id="p3">
+            <h3>¿Qué signfica las siglas CSS?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Cream Style Short
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Come Style Sheets
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Cascading Style Sheets
+            </label>
+        </div>
+        <div id="p4">
+            <h3>¿Cuál no es un método de JavaScript en arreglos?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> push()
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> pop()
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> delete()
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="respuesta(4,this)"> shift()
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="respuesta(4,this)"> unshift()
+            </label>
+        </div>
+        <div id="p5">
+            <h3>¿Cuál no es un sistema de control de versiones?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> Git
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> Azure DevOps
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> Mercurial
+            </label>
+            <label>
+                <input type="radio" value="4" name="p5" onclick="respuesta(5,this)"> Gitlab
+            </label>
+            <label>
+                <input type="radio" value="5" name="p5" onclick="respuesta(5,this)"> Stack Overflow
+            </label>
+        </div>
+        <div id="p6">
+            <h3>¿Cuál no es un gestor de base de datos?</h3>
+            <label>
+                <input type="radio" value="1" name="p6" onclick="respuesta(6,this)"> Oracle
+            </label>
+            <label>
+                <input type="radio" value="2" name="p6" onclick="respuesta(6,this)"> MySQL
+            </label>
+            <label>
+                <input type="radio" value="3" name="p6" onclick="respuesta(6,this)"> Cassandra
+            </label>
+            <label>
+                <input type="radio" value="4" name="p6" onclick="respuesta(6,this)"> MongoDB
+            </label>
+            <label>
+                <input type="radio" value="5" name="p6" onclick="respuesta(6,this)"> PhpMyAdmin
+            </label>
+        </div>
+    </section>
+
+    <div>
+        <button onclick="corregir()">Corregir</button>
+        <h3>Cantidad de aciertos: <span id="resultado"></span></h3>
+    </div> 
+    <footer>
+        <span id="f1">Copyright 2023</span>
+        <span id="f2">GitHub: brianinhu/game-quizz</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
