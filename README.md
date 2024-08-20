@@ -1,2 +1,2 @@
-# Game Quizz
-6 preguntas relacionadas al tema de la programación usando HTML, CSS y JS básico.
+# Programming Quizz
+6 questions related to the topic of programming using HTML, CSS and JS.
